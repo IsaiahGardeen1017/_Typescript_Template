@@ -1,0 +1,22 @@
+{
+  "name": "package-name",
+  "version": "1.0.0",
+  "description": "description",
+  "main": "bld/index.js",
+  "scripts": {
+    "dev": "nodemon bld/index.js",
+    "watch": "tsc -w"
+  },
+  "author": "Author",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.12.11",
+    "nodemon": "^3.1.0",
+    "typescript": "^5.5.2"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
+  }
+}
