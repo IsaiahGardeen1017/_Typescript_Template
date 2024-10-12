@@ -12,7 +12,7 @@ Run server in development mode\
 ##Docker
 
 Build image
-`docker build -t isaiahgardeen/imagename:1.0`
+`docker build -t isaiahgardeen/sampleImage:1.0`
 
 Run image
 `docker run -p 1080:80 abc123gfed31`

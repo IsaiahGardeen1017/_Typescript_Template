@@ -5,7 +5,8 @@
   "main": "bld/index.js",
   "scripts": {
     "dev": "nodemon bld/index.js",
-    "watch": "tsc -w"
+    "watch": "tsc -w",
+    "build": "tsc"
   },
   "author": "Author",
   "license": "ISC",
