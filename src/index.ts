@@ -5,12 +5,23 @@ import { WebRouter } from "./routers/webRouter";
 
 dotenv.config();
 
+/*
+const args = process.argv.slice(2);
+const arg1 = args[0];
+if(!Number.isInteger(arg1)){
+    console.error(`Could not start, ${arg1} is not a valid port`);
+}
+const port = arg1;
+*/
+
+
+const port = process.env.PORT || 8080;
+
 const server: Express = express();
-const backendPort = process.env.PORT;
 
 server.use('/api', HelloRouter);
 server.use('/', WebRouter);
 
-server.listen(backendPort, () => {
-    console.log(`Listening on port ${backendPort}`);
+server.listen(port, () => {
+    console.log(`Listening on port ${port}`);
 });
