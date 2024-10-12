@@ -15,7 +15,7 @@ const port = arg1;
 */
 
 
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 100;
 
 const server: Express = express();
 

@@ -1,0 +1,11 @@
+services:
+  server:
+    build:
+      context: .
+      target: development
+    volumes:
+      - ./:/usr/src/app
+      - /usr/src/app/node_modules
+    ports:
+      - 100:100
+    command: npm run dev
