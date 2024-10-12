@@ -11,16 +11,17 @@ Run server in development mode\
 
 ##Docker
 
-compose
+Compose and run for development
 `docker compose -f docker-compose.dev.yaml up --build -d`
 -d for detached, --build to rebuild
 
+build image with compose
+`docker compose -f docker-compose.yaml build` 
 
+Run image without composing
+`docker run -d -p 80:100 username/imagename`
 
+Push/pull docker image
+`docker push username/imagename`
+`docker pull username/imagename`
 
-
-Build image
-`docker build -t isaiahgardeen/sampleImage:1.0`
-
-Run image
-`docker run -p 1080:80 abc123gfed31`
